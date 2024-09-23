@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automático</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cajero Automático</h1>
+        <div id="login">
+            <input type="password" id="pin" placeholder="Ingrese su PIN">
+            <button id="loginBtn">Ingresar</button>
+        </div>
+        <div id="operaciones" style="display:none;">
+            <div id="saldoActual"></div>
+            <button id="retiroBtn">Retirar Dinero</button>
+            <input type="number" id="montoRetiro" placeholder="Monto a retirar" style="display:none;">
+            <button id="depositoBtn">Depositar Dinero</button>
+            <input type="number" id="montoDeposito" placeholder="Monto a depositar" style="display:none;">
+            <button id="historialBtn">Ver Historial</button>
+            <button id="salirBtn">Salir</button>
+        </div>
+        <div id="historial"></div>
+        <div id="mensaje"></div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
